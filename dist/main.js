@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/app.js */ \"./src/js/app.js\");\n/* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_app_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\n\n\n//# sourceURL=webpack://webpackmodules/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/app.js */ \"./src/js/app.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\n\n\n//# sourceURL=webpack://webpackmodules/./src/index.js?");
 
 /***/ }),
 
@@ -24,9 +24,31 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game */ \"./src/js/game.js\");\n\nconst game = new _game__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ngame.start();\n\n//# sourceURL=webpack://webpackmodules/./src/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/domain.js":
+/*!**************************!*\
+  !*** ./src/js/domain.js ***!
+  \**************************/
 /***/ (() => {
 
-eval("console.log('app worked');\n\n//# sourceURL=webpack://webpackmodules/./src/js/app.js?");
+eval("class Character {}\n\n//# sourceURL=webpack://webpackmodules/./src/js/domain.js?");
+
+/***/ }),
+
+/***/ "./src/js/game.js":
+/*!************************!*\
+  !*** ./src/js/game.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Game),\n/* harmony export */   \"readGameSaving\": () => (/* binding */ readGameSaving),\n/* harmony export */   \"writeGameSaving\": () => (/* binding */ writeGameSaving)\n/* harmony export */ });\n/* harmony import */ var _domain_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domain.js */ \"./src/js/domain.js\");\n/* harmony import */ var _domain_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_domain_js__WEBPACK_IMPORTED_MODULE_0__);\n\nclass Game {\n  start() {\n    console.log('game started');\n  }\n\n}\n\nclass GameSavingData {}\n\nfunction readGameSaving() {}\nfunction writeGameSaving() {}\n\n//# sourceURL=webpack://webpackmodules/./src/js/game.js?");
 
 /***/ }),
 
